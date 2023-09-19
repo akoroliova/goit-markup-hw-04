@@ -353,7 +353,7 @@ section {
   margin: 0;
 }
 
-.portfolio-pic-box:hover .overlay {
+.portfolio-card:hover .overlay {
   transform: translateY(0);
 }
 
