@@ -90,6 +90,10 @@ section {
   gap: 40px;
 }
 
+.menu-link-studio {
+  color: #404bbf;
+}
+
 .menu-link,
 .menu-link:visited {
   position: relative;
@@ -111,10 +115,9 @@ section {
   color: var(--OCEAN, #404bbf);
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
+.menu-link-studio::after {
   position: absolute;
-  content: "";
+  content: '';
   background-color: var(--OCEAN, #404bbf);
   height: 4px;
   width: 100%;
@@ -315,7 +318,7 @@ section {
   letter-spacing: 0.02em;
 }
 
-.team-card-social-icons {
+.team-social-buttons-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,18 +326,12 @@ section {
   flex-direction: row;
 }
 
-.team-social-insta,
-.team-social-twitter,
-.team-social-facebook,
-.team-social-linkedin {
+.team-social-button {
   width: 40px;
   height: 40px;
 }
 
-.team-insta-link,
-.team-twitter-link,
-.team-facebook-link,
-.team-linkedin-link {
+.team-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,14 +342,8 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-insta-link:hover,
-.team-insta-link:focus,
-.team-twitter-link:hover,
-.team-twitter-link:focus,
-.team-facebook-link:hover,
-.team-facebook-link:focus,
-.team-linkedin-link:hover,
-.team-linkedin-link:focus {
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: #404bbf;
 }
 
@@ -496,23 +487,17 @@ section {
   margin-bottom: 16px;
 }
 
-.social-icons {
+.company-social-buttons-list {
   display: flex;
   gap: 16px;
 }
 
-.company-social-insta,
-.company-social-twitter,
-.company-social-facebook,
-.company-social-linkedin {
+.company-social-button {
   width: 40px;
   height: 40px;
 }
 
-.company-insta-link,
-.company-twitter-link,
-.company-facebook-link,
-.company-linkedin-link {
+.company-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -523,13 +508,7 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-insta-link:hover,
-.company-insta-link:focus,
-.company-twitter-link:hover,
-.company-twitter-link:focus,
-.company-facebook-link:hover,
-.company-facebook-link:focus,
-.company-linkedin-link:hover,
-.company-linkedin-link:focus {
+.company-social-link:hover,
+.company-social-link:focus {
   background-color: #31d0aa;
 }
