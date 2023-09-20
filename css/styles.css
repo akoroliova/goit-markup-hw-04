@@ -90,18 +90,35 @@ section {
   gap: 40px;
 }
 
-.menu-link {
+.menu-link,
+.menu-link:visited {
   position: relative;
+  color: #404bbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--OCEAN, #404bbf);
 }
 
 .menu-link:hover::after,
 .menu-link:focus::after {
+  position: absolute;
   content: "";
   background-color: var(--OCEAN, #404bbf);
   height: 4px;
   width: 100%;
   border-radius: 2px;
-  position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
@@ -118,25 +135,6 @@ section {
   display: flex;
   font-style: normal;
   gap: 40px;
-}
-
-.menu-link,
-.menu-link:visited {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 24px;
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--OCEAN, #404bbf);
 }
 
 .contact-link,
@@ -222,17 +220,20 @@ section {
 
 .advantages-card {
   display: flex;
-
   flex-direction: column;
-  gap: 8px;
   width: calc((100% - 72px) / 4);
 }
 
 .advantages-icons-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
   padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .advantages-card-header {
@@ -241,6 +242,7 @@ section {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .advantages-card-paragraph {
@@ -352,6 +354,10 @@ section {
 .team-linkedin-link:hover,
 .team-linkedin-link:focus {
   background-color: #404bbf;
+}
+
+.svg-icons {
+  fill: #f4f4fd;
 }
 
 .portfolio-header {
