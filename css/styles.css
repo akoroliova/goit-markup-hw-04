@@ -91,7 +91,7 @@ section {
 }
 
 .menu-link-studio {
-  color: #404bbf;
+  color: var(--OCEAN, #404bbf);
 }
 
 .menu-link,
@@ -117,7 +117,7 @@ section {
 
 .menu-link-studio::after {
   position: absolute;
-  content: '';
+  content: "";
   background-color: var(--OCEAN, #404bbf);
   height: 4px;
   width: 100%;
