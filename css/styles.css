@@ -90,12 +90,11 @@ section {
   gap: 40px;
 }
 
-.menu-link-studio {
+.menu-link-studio.menu-link {
   color: var(--OCEAN, #404bbf);
 }
 
-.menu-link,
-.menu-link:visited {
+.menu-link {
   position: relative;
   color: #404bbf;
   display: flex;
