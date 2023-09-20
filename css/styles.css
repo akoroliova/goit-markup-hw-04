@@ -145,6 +145,7 @@ section {
   background-position: center;
   background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 .hero-header {
